@@ -1,4 +1,4 @@
-Audio 2012-11-08T12:00:00 The Audio portal hosts various soundtrack, records and live projects.
+Audio 2012-11-08T12:00:00 The Audio portal hosts various soundtrack, records and live projects./
 Visual  2018-04-17T12:00:00 The Visual hosts design and interaction projects.
 Research  2017-04-24T12:00:00 The Research hosts philosophy and linguistics projects.
 About 2018-11-08T12:00:00 Learn more About this site.
@@ -110,6 +110,7 @@ Volkenessen 2012-02-03T12:00:00 Volkenessen is a multiplayer physics-based fight
 Waiting For Horus 2013-04-22T12:00:00 Waiting for Horus was a fast paced multiplayer arena type 3rd person shooter.
 Left  2018-09-12T12:00:00 Left is a writing tool.
 Dotgrid 2019-01-15T12:00:00 Dotgrid is a vector tool.
+Vega 2019-04-22-15T12:00:00 Vega is a test
 Marabu  2018-05-31T12:00:00 Marabu is a music tool.
 Ronin 2018-09-11T12:00:00 Ronin is a drawing tool.
 Byt 2017-12-01T12:00:00 Byt was a ByteBeat editor.
@@ -225,3 +226,4 @@ Asodeky 2016-02-05T12:00:00 The Asodeky, is the advanced Lietal language guide.
 Yletaodeta  2019-02-24T12:00:00 The Yletaodeta, is the Lietal writing system.
 Japanese  2017-07-15T12:00:00 The Japanese page is a collection of Japanese study notes.
 Russian 2017-07-13T12:00:00 The Russian page is a collection of Russian study notes.
+Vega 2019-04-22T12:00:00 VEGA IS A TEST
