@@ -3,18 +3,19 @@
 /-------------------*/
 
 :root { 
-  --background: #f4f4f4;
-  --color_1: #72dec2; 
-  --color_2: #51a196; 
-  --color_3: #316067; 
-  --grey_1: #f4f4f4; 
+  /* --background: #f4f4f4; */
+  --background: #111111;
+  --color_1: #4ec5da; 
+  --color_2: #419aaa; 
+  --color_3: #336981; 
+  --grey_1: #e4e4e4; 
   --grey_2: #a1a1a1;
   --grey_3: #333333;
   --grey_4: #111111;
   --rounded: 2px; 
 }
 
-.fg_audio { color:var(--color_1); }
+/* .fg_audio { color:var(--color_1); }
 .fg_visual { color:var(--color_2); }
 .fg_research { color:var(--color_3); }
 .fg_misc { color:var(--grey_3); }
@@ -22,7 +23,7 @@
 .bg_audio { background-color:var(--color_1) !important; }
 .bg_visual { background-color:var(--color_2) !important; }
 .bg_research { background-color:var(--color_3) !important; }
-.bg_misc { background-color:var(--grey_3) !important; }
+.bg_misc { background-color:var(--grey_3) !important; } */
 
 .redlink { color:red !important; }
 
@@ -80,15 +81,15 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 /* Sidebar */
 
 #document #core #sidebar { display: inline-block;width: calc((100vw - 730px - 90px)/2);position: relative;height: 100%;margin-right: 0px;margin-left:30px;padding:50px 30px 30px 0px}
-#document #core #sidebar h1 { font-size: 26px;line-height: 30px;margin: 0px 0px 30px;font-family: var(--font_m); max-width: 400px}
+#document #core #sidebar h1 { font-size: 26px;line-height: 30px;margin: 0px 0px 30px;font-family: var(--font_m);color: var(--grey_1); max-width: 400px}
 #document #core #sidebar h1 a { font-family: var(--font_b) }
 #document #core #sidebar h1 b { font-family: var(--font_i); font-weight: normal; }
-#document #core #sidebar h2 { font-size: 30px;margin: 0px auto;display: block;line-height: 30px;text-transform: uppercase;margin-bottom: 30px;font-family: var(--font_t); transition: opacity 250ms}
+#document #core #sidebar h2 { font-size: 30px;margin: 0px auto;color: var(--grey_1);display: block;line-height: 30px;text-transform: uppercase;margin-bottom: 30px;font-family: var(--font_t); transition: opacity 250ms}
 #document #core #sidebar h2 a:hover { text-decoration: none; opacity: 0.5 }
-#document #core #sidebar ul.links { margin-bottom:30px; }
+#document #core #sidebar ul.links { margin-bottom:30px; color: var(--grey_1);}
 #document #core #sidebar ul.links li { font-size: 12px;margin-bottom: 2px;font-family: var(--font_b);line-height: 20px;display: block;text-transform: uppercase; position: relative;}
 #document #core #sidebar ul.links li:hover { text-decoration: underline; }
-#document #core #sidebar ul.directory { font-family: var(--mono);border-top: 1.5px solid black;padding-top: 30px;}
+#document #core #sidebar ul.directory { font-family: var(--mono);border-top: 1.5px solid white;padding-top: 30px;color: var(--grey_1);}
 #document #core #sidebar ul.directory li { text-transform: uppercase;font-size: 14px;line-height: 20px; position: relative; }
 #document #core #sidebar ul.directory li.parent { font-family: var(--mono_m); margin-bottom:15px }
 #document #core #sidebar ul.directory li.parent:after { content: '<';font-family: var(--mono);color:var(--grey_2);position: absolute;right:0px }
@@ -99,25 +100,25 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 
 #document #core #content { display: inline-block;padding: 45px 30px 30px;margin: 0px auto;vertical-align: top;max-width: 730px;width: calc(100vw - 320px); }
 #document #core #content * > p:first-child { font-size: 32px;line-height: 40px;max-width: 480px  }
-#document #core #content p { font-size: 18px;display: block;max-width: 600px;line-height: 25px;font-family: var(--font);margin: 0px 0px 30px }
+#document #core #content p { font-size: 18px;display: block;color: var(--grey_1);max-width: 600px;line-height: 25px;font-family: var(--font);margin: 0px 0px 30px }
 #document #core #content p b { font-family: var(--font_b); font-weight: normal; }
 #document #core #content p b a { font-family: var(--font_b); font-weight: normal; }
 #document #core #content p i { font-family: var(--font_i); font-style: normal; }
-#document #core #content p a { margin-bottom: -2px;display: inline-block;font-family: var(--font_m);position: relative; line-height: 90%; transition: all 150ms; border-bottom:1.5px solid transparent; }
-#document #core #content p a:hover { border-bottom-color: black }
-#document #core #content p a.external:after { content: "°";color: black; font-family: var(--font_b); padding-left:1px; transition: all 250ms}
+#document #core #content p a { margin-bottom: -2px;display: inline-block;font-family: var(--font_m);position: relative;color: white; line-height: 90%; transition: all 150ms; border-bottom:1.5px solid transparent; }
+#document #core #content p a:hover { border-bottom-color: white }
+#document #core #content p a.external:after { content: "°";color: white; font-family: var(--font_b); padding-left:1px; transition: all 250ms}
 #document #core #content p a.external:hover:after { color:var(--color_1); }
 #document #core #content p code, #document #core #content li code { display: inline-block;font-size: 12px;font-family: var(--mono_b);border: 1.5px solid black;padding: 0px 5px;border-radius:var(--rounded);line-height: 20px;margin-bottom: 0px; background:none; color:black; vertical-align: middle; }
-#document #core #content h2 { display: block;text-decoration: none;border-bottom: 1.5px solid transparent;transition: all 250ms;font-family: var(--font_b);text-transform: capitalize;font-size: 36px;letter-spacing: -1px; margin-bottom: 30px}
+#document #core #content h2 { display: block;color: var(--grey_1);text-decoration: none;border-bottom: 1.5px solid transparent;transition: all 250ms;font-family: var(--font_b);text-transform: capitalize;font-size: 36px;letter-spacing: -1px; margin-bottom: 30px}
 #document #core #content h2 a { display: inline-block; text-decoration: none;  transition: all 250ms; height:30px; }
-#document #core #content h3 { font-family: var(--font_m);font-size: 30px;text-transform: capitalize;line-height: 30px;max-width: 600px;margin-bottom: 30px;}
+#document #core #content h3 { font-family: var(--font_m);color: var(--grey_1);font-size: 30px;text-transform: capitalize;line-height: 30px;max-width: 600px;margin-bottom: 30px;}
 #document #core #content h3 a { display: inline-block; text-decoration: none}
-#document #core #content h4 { font-size: 14px;font-family: var(--font_m);margin-top: -20px;display: block;margin-bottom: 30px;line-height: 20px; }
+#document #core #content h4 { font-size: 14px;font-family: var(--font_m);color: var(--grey_1);margin-top: -20px;display: block;margin-bottom: 30px;line-height: 20px; }
 #document #core #content h4 a { border-bottom:0px; font-family: var(--font_b); }
 #document #core #content h4 a:hover { text-decoration: underline; }
 #document #core #content h4 b { font-weight: normal; font-family: var(--font_b) }
 #document #core #content iframe { margin-bottom: 45px;border-radius: var(--rounded);overflow: hidden;max-width: 700px;display: block;width:100%; }
-#document #core #content table { overflow: hidden;border-collapse: separate;font-family: var(--mono);min-width: 50%;font-size:12px; line-height:20px; margin-bottom:30px}
+#document #core #content table { overflow: hidden;border-collapse: separate;font-family: var(--mono);min-width: 50%;font-size:12px;color: var(--grey_1); line-height:20px; margin-bottom:30px}
 #document #core #content table tr th { font-family:var(--mono_m); text-align:left; padding-top:10px; padding-bottom:10px;}
 #document #core #content table tr > * { padding-right:20px; padding-left:20px; border-right:1.5px solid black;}
 #document #core #content table tr > *:first-child { padding-left:0px; }
@@ -127,13 +128,13 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content table tr a:hover { text-decoration: none; }
 #document #core #content table tr a.external:after { content: "°";color: black; font-family: var(--font_b); padding-left:1px; transition: all 250ms}
 #document #core #content table tr a.external:hover:after { color:var(--color_1); }
-#document #core #content ul { margin-bottom:30px; position: relative; max-width: 700px;}
+#document #core #content ul { margin-bottom:30px; position: relative; max-width: 700px;color: var(--grey_1);}
 #document #core #content ul li { font-family: var(--font);line-height: 25px; position: relative; padding-left:30px}
 #document #core #content ul li a { text-decoration: underline; }
 #document #core #content ul li b { font-family: var(--font_b);font-weight: normal; }
 #document #core #content ul li a.external:after { content: "°";color: black; font-family: var(--font_b); padding-left:1px; transition: all 250ms}
 #document #core #content ul li a.external:hover:after { color:var(--color_1); }
-#document #core #content code { font-family: var(--mono);font-size: 12px;padding: 20px 30px;max-width: 640px;margin-bottom: 30px;line-height: 18px;overflow-x: auto;overflow-y: hidden;background: white;color: black;border-radius: var(--rounded);}
+#document #core #content code { font-family: var(--mono);font-size: 12px;padding: 20px 30px;max-width: 640px;margin-bottom: 30px;line-height: 18px;overflow-x: auto;overflow-y: hidden;background: white;color: black;border-radius: var(--rounded);color: var(--grey_1);}
 #document #core #content code b { font-family: var(--mono_m); font-weight: normal;   }
 #document #core #content code li { display: block; line-height: 20px }
 #document #core #content code li a { font-family: var(--mono_m); text-decoration: underline;}
@@ -144,7 +145,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content div.notice a { text-decoration: underline; font-family: var(--font_m)}
 #document #core #content div.notice b { font-weight: normal; font-family: var(--font_b) }
 #document #core #content div.notice a:hover { text-decoration: none }
-#document #core #content ul.tidy li { border-top: 0px;line-height: 20px;font-size:13px;margin-left:0px;padding:0px; margin-bottom: 0px; font-family: var(--font) }
+#document #core #content ul.tidy li { border-top: 0px;line-height: 20px;font-size:13px;margin-left:0px;padding:0px; margin-bottom: 0px;color: var(--grey_1); font-family: var(--font) }
 #document #core #content ul.tidy li a { text-decoration: none; font-family: var(--font_b) }
 #document #core #content ul.tidy li a:hover { text-decoration: underline; }
 #document #core #content ul.tidy li.head { font-size: 18px;font-family: var(--font);line-height: 45px; }
@@ -184,7 +185,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content .entry.event .bref { font-size:24px; line-height: 30px; }
 #document #core #content .entry.event svg.icon { background:white; }
 #document #core #content .entry.event svg.icon path { stroke:black; }
-#document #core #content .entry ul { color:var(--grey_1); font-size:12px; margin-top:10px; border-radius:var(--rounded); margin-bottom:10px; font-family: var(--font_b);}
+#document #core #content .entry ul { color:var(--grey_1); font-size:12px; margin-top:10px; border-radius:var(--rounded); margin-bottom:10px; font-family: var(--font_b);color: var(--grey_1);}
 #document #core #content .entry ul li { padding: 2.5px 10px;background: var(--grey_3);margin-bottom: 1.5px;border-radius: var(--rounded);color: white}
 #document #core #content .entry ul li:last-child { border-bottom:0px }
 #document #core #content .entry ul li:hover { background: var(--grey_3) }
@@ -196,9 +197,9 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 
 #document #core #navi { margin-left: 30px;font-size: 14px;width: calc(100vw - 60px);border-top: 1.5px solid black;padding-top: 30px;position: relative;overflow: hidden; color:white;}
 #document #core #navi.empty { display: none }
-#document #core #navi svg { stroke: black;fill: none;padding: 15px;width: 40px;height: 40px;display: block;left: -20px;position: absolute; top:15px; }
+#document #core #navi svg { stroke: white;fill: none;padding: 15px;width: 40px;height: 40px;display: block;left: -20px;position: absolute; top:15px; }
 #document #core #navi ul { font-size: 12px; font-family: var(--font_m) }
-#document #core #navi ul li a { color:black; }
+#document #core #navi ul li a { color:white; }
 #document #core #navi ul li a:hover { text-decoration: underline; }
 #document #core #navi ul li.selected a { font-family: var(--font_b) }
 #document #core #navi > ul { margin-left:60px; margin-bottom:30px; }
@@ -210,16 +211,17 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 
 /* Footer */
 
-#document #footer { background: white;color: black;padding: 0px 30px; clear:both; position: relative; }
-#document #footer #credits { padding: 30px 0px;font-size: 12px;line-height: 40px;color: black;margin: 0px;max-width: 100%;vertical-align: middle}
+#document #footer { background: var(--grey_4);color: var(--grey_1);padding: 0px 30px; clear:both; position: relative; }
+#document #footer #credits a { font-family: var(--font_b);color: var(--grey_1);  }
+#document #footer #credits { padding: 30px 0px;font-size: 12px;line-height: 40px;margin: 0px;max-width: 100%;vertical-align: middle}
 #document #footer #credits center { display: inline-block; position: absolute;left:calc(50% - 75px); font-family: var(--mono); font-size:12px;}
-#document #footer #credits a { font-family: var(--font_b);  }
-#document #footer #credits a:hover { color:black; opacity: 1; text-decoration: underline; }
+#document #footer #credits a { font-family: var(--font_b);color: var(--grey_1);  }
+#document #footer #credits a:hover { color: var(--grey_1); opacity: 1; text-decoration: underline; }
 #document #footer #credits a:hover { cursor: pointer }
 #document #footer #credits a.icon { background-position: center center;background-size: cover ;display: inline-block;width: 30px;height: 30px;float: right;margin-left: 10px; margin-top:5px; opacity: 1.0}
 #document #footer #credits a.icon:hover { opacity: 0.7 }
 #document #footer #credits a.icon.twitter { background-image:url(../media/icon/twitter.png); }
-#document #footer #credits a.icon.merveilles { background-image:url(../media/icon/merveilles.svg); background-size:40px }
+#document #footer #credits a.icon.merveilles { background-image:url(../media/icon/ccc.png); }
 #document #footer #credits a.icon.github { background-image:url(../media/icon/github.png); }
 #document #footer #credits a.icon.hundredrabbits { background-image: url(../media/icon/hundredrabbits.svg);float:left;margin-left:0px;margin-right:20px }
 #document #footer #credits a.icon.rotonde { background-image:url(../media/icon/rotonde.svg); }
